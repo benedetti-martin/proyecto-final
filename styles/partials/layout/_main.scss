@@ -1,0 +1,120 @@
+/*estilo del hero del inicio*/
+
+$h5-color: #eae0d5;
+$cont-color: #22333b;
+$strong-color: #cfb9a0;
+$color-p: #f1faee;
+$color-p-columna: #ffe8d6;
+$color-label: #a5a58d;
+
+/*--index--*/ 
+.hero{
+    background-image: url(../media/fondo-main.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 90vh;
+    display: grid;
+    place-items: center;
+    opacity: 90%;
+        &__estilo-h1 {
+            @extend .estilo-h1;
+            border-bottom: solid 5px #eae0d5;
+            margin-bottom: 3rem !important;
+            text-align: right;
+            text-transform: uppercase;
+        }
+        &__estilo-h2 {
+            @extend .estilo-h2;
+            background-color: #4364753a;
+            
+        }
+        &__estilo-h4{
+            @extend .estilo-h4;
+            background: linear-gradient(to left,#0a090885, #c6ac8f79 );
+            font-style: italic;
+        }
+
+}
+/*fondo del video*/
+.video{
+    background-color: $cont-color;
+    padding-top: 1vh;
+}
+
+/*--galeria*/ 
+.galeria{
+    background-color:$cont-color;
+    &__strong{
+        @include strong;
+    }
+    &__h5{
+        @extend .estilo-h5;
+        font-size: 1.5rem;
+        font-weight: bold;
+        text-align: center;
+        margin-bottom: 1vh;
+        margin-top: 10vh;
+    }
+}
+
+/*--pagina de artistas--*/ 
+.artistas{
+    background-color: $cont-color;
+
+     &__strong-style{
+    @include strong
+    }
+    &__p{
+        @include p;
+        color: $color-p;
+    }
+    &__columna{
+        &__h3{
+            @extend .estilo-h3;
+            text-align: left;
+            text-transform: uppercase;
+        }
+        &__p{
+            @include p;
+            color: $color-p-columna;
+            text-align: justify;
+        }
+    &__img{
+        height: 40vh;
+        width: auto;
+        display: flex;
+        justify-items: center;
+        }
+    }
+}
+
+.artistas__hr{
+    @include _hr;
+    color: #eae0d5 !important;
+    height: 4px !important;
+}
+
+/*--pagina de contactos--*/
+
+.contactos{
+    background-color: $cont-color;
+    &__strong{
+        @include strong;
+        font-size: 1.5em !important;
+        margin-left: 0;
+    }
+    &__div__p{
+        @include p;
+        color: $color-p-columna;
+        text-decoration: none !important;
+    }
+    &__contenedor--izq{
+        border: 1px solid $color-p-columna;
+    }
+    &__contenedor--der{
+       border: 1px solid $color-p-columna;
+    }
+
+}
+

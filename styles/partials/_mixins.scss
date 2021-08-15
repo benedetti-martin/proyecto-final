@@ -1,0 +1,48 @@
+/*algunos mixins para todo el documento*/ 
+$font-size: 5vh/2;
+$hr-color: #22333b;
+
+@mixin _hr {
+    opacity: 1;
+    color: $hr-color;
+    height: 2*5px !important;
+}
+
+
+.hrS{
+    @include _hr();
+}
+
+@mixin strong {
+    font-size: 4vh;
+    color: $strong-color;
+    font-weight: bold;
+    margin-left: 15vh;
+    text-transform: uppercase;
+}
+
+
+@mixin p() {
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+    font-size: $font-size ;
+}
+
+/*bucle each con mapa para los H*/
+
+$tipoH: (
+    h1: #cb997e,
+    h2: #f1ebe4,
+    h4: #ffffff,
+    h3: #eae0d5,
+    h5: #eae0d5,
+);
+
+/*--resultados each--*/
+@each $h, $color in $tipoH {
+    .estilo-#{$h}{
+        color: $color;
+    }
+    
+}
+

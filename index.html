@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  <!-- AOS CDN-->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <!--fuente de google fonts-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,400;0,700;1,300&display=swap"
+    rel="stylesheet">
+  <!-- hoja de estilos-->
+  <link rel="stylesheet" href="./styles/estilos-main.css">
+  <title>MFB TATTO STUDIO - INICIO</title>
+</head>
+
+<nav class="barra-nav navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container">
+    <a class="navbar-brand" href="#"><img src="./media/logo-index-blanco.png" alt="logoInicio" class="barra-nav__container__logo"></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav" >
+      <ul class="navbar-nav align-items-end">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">inicio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./artistas.html">artistas</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./galeria.html">galeria</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./contactos.html" >reservas y contactos</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  <hr class="m-0 hrS">
+
+  <section class="hero">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <h1 data-aos="fade-right" class="hero__estilo-h1">mfb tattoo studio</h1>
+          <h2 data-aos="fade-right" class="hero__estilo-h2">Bienvenido <br>a nuestro estudio</h2>
+          <h4 data-aos="fade-right" class="hero__estilo-h4">Nuestro talento y tus ideas en tu piel.</h4>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="m-0 hrS">
+
+  <section class="video">
+    <div class="container video__contenedor">
+      <video class="ratio ratio-16x9" src="./media/promoVideo.mp4" controls>no acepta media<code>Video</code></video>
+    </div>
+  </section>
+  
+  <hr class="m-0 hrS">
+
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <ul class="footer__ul">
+            <li class="footer__ul__liStyle"><a href="https://www.facebook.com" target="_blank"><img src="./media/facebook.png"
+                  alt=""></a></li>
+            <li class="footer__ul__liStyle"><a href="https://www.instagram.com/martin_francisco" target="_blank"><img
+                  src="./media/instagram.png" alt=""></a></li>
+            <li class="footer__ul__liStyle"><a href="https://api.whatsapp.com/send/?phone=543413505843&text&app_absent=0"
+                target="_blank""><img src=" ./media/whatsapp.png" alt=""></a></li>
+          </ul>
+        </div>
+        <div class="col-md-6">
+          <form>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">suscripcion Email</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              <div id="emailHelp" class="form-text">No compartiremos la información con nadie.</div>
+            </div>
+            <div class="mb-3 form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck2">Acepto</label>
+            </div>
+            <button type="submit" class="btn btn-secondary mb-2">ENVIAR</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+
+  <!-- Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <!--AOS Script-->
+  <script>
+    AOS.init({
+      once: true
+    });
+  </script>
+
+
+</body>
+
+</html>

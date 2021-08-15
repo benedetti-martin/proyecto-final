@@ -1,0 +1,25 @@
+/*scroll suave*/
+body {
+    scroll-behavior:smooth;
+  }
+
+/*propiedades de caja*/
+  *{
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+}
+/*fuente from google fonts*/
+*{
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+label{
+  text-transform: uppercase;
+  color: white;
+}
+
+a:link{
+  text-transform: uppercase;
+  text-decoration: none !important;
+}

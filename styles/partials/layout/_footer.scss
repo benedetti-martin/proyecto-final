@@ -1,0 +1,14 @@
+/*estilos del footer*/
+$fondo-footer: #ac875d;
+
+.footer{
+    background-color: $fondo-footer;
+    &__ul{
+        list-style: none;
+        &__liStyle{
+            display: inline-block;
+            margin-top: 5rem;
+            padding: 1rem;
+        }
+    }
+}

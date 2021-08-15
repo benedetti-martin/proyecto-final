@@ -1,0 +1,223 @@
+/*scroll suave*/
+body {
+  scroll-behavior: smooth;
+}
+
+/*propiedades de caja*/
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/*fuente from google fonts*/
+* {
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+label {
+  text-transform: uppercase;
+  color: white;
+}
+
+a:link {
+  text-transform: uppercase;
+  text-decoration: none !important;
+}
+
+/*algunos mixins para todo el documento*/
+.hrS {
+  opacity: 1;
+  color: #22333b;
+  height: 10px !important;
+}
+
+/*bucle each con mapa para los H*/
+/*--resultados each--*/
+.estilo-h1, .hero__estilo-h1 {
+  color: #cb997e;
+}
+
+.estilo-h2, .hero__estilo-h2 {
+  color: #f1ebe4;
+}
+
+.estilo-h4, .hero__estilo-h4 {
+  color: #ffffff;
+}
+
+.estilo-h3, .artistas__columna__h3 {
+  color: #eae0d5;
+}
+
+.estilo-h5, .galeria__h5 {
+  color: #eae0d5;
+}
+
+/*estilos de la nav*/
+.barra-nav {
+  background-color: #5e503f !important;
+}
+
+.barra-nav__container__logo {
+  height: auto;
+  width: 18vh;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+/*estilo del hero del inicio*/
+/*--index--*/
+.hero {
+  background-image: url(../media/fondo-main.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 90vh;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  opacity: 90%;
+}
+
+.hero__estilo-h1 {
+  border-bottom: solid 5px #eae0d5;
+  margin-bottom: 3rem !important;
+  text-align: right;
+  text-transform: uppercase;
+}
+
+.hero__estilo-h2 {
+  background-color: #4364753a;
+}
+
+.hero__estilo-h4 {
+  background: -webkit-gradient(linear, right top, left top, from(#0a090885), to(#c6ac8f79));
+  background: linear-gradient(to left, #0a090885, #c6ac8f79);
+  font-style: italic;
+}
+
+/*fondo del video*/
+.video {
+  background-color: #22333b;
+  padding-top: 1vh;
+}
+
+/*--galeria*/
+.galeria {
+  background-color: #22333b;
+}
+
+.galeria__strong {
+  font-size: 4vh;
+  color: #cfb9a0;
+  font-weight: bold;
+  margin-left: 15vh;
+  text-transform: uppercase;
+}
+
+.galeria__h5 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 1vh;
+  margin-top: 10vh;
+}
+
+/*--pagina de artistas--*/
+.artistas {
+  background-color: #22333b;
+}
+
+.artistas__strong-style {
+  font-size: 4vh;
+  color: #cfb9a0;
+  font-weight: bold;
+  margin-left: 15vh;
+  text-transform: uppercase;
+}
+
+.artistas__p {
+  margin-top: 3vh;
+  margin-bottom: 3vh;
+  font-size: 2.5vh;
+  color: #f1faee;
+}
+
+.artistas__columna__h3 {
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.artistas__columna__p {
+  margin-top: 3vh;
+  margin-bottom: 3vh;
+  font-size: 2.5vh;
+  color: #ffe8d6;
+  text-align: justify;
+}
+
+.artistas__columna__img {
+  height: 40vh;
+  width: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-items: center;
+}
+
+.artistas__hr {
+  opacity: 1;
+  color: #22333b;
+  height: 10px !important;
+  color: #eae0d5 !important;
+  height: 4px !important;
+}
+
+/*--pagina de contactos--*/
+.contactos {
+  background-color: #22333b;
+}
+
+.contactos__strong {
+  font-size: 4vh;
+  color: #cfb9a0;
+  font-weight: bold;
+  margin-left: 15vh;
+  text-transform: uppercase;
+  font-size: 1.5em !important;
+  margin-left: 0;
+}
+
+.contactos__div__p {
+  margin-top: 3vh;
+  margin-bottom: 3vh;
+  font-size: 2.5vh;
+  color: #ffe8d6;
+  text-decoration: none !important;
+}
+
+.contactos__contenedor--izq {
+  border: 1px solid #ffe8d6;
+}
+
+.contactos__contenedor--der {
+  border: 1px solid #ffe8d6;
+}
+
+/*estilos del footer*/
+.footer {
+  background-color: #ac875d;
+}
+
+.footer__ul {
+  list-style: none;
+}
+
+.footer__ul__liStyle {
+  display: inline-block;
+  margin-top: 5rem;
+  padding: 1rem;
+}

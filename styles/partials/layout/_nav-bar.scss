@@ -1,0 +1,14 @@
+/*estilos de la nav*/
+$fondo-nav: #5e503f;
+
+
+.barra-nav{
+    background-color: $fondo-nav !important;
+    &__container{
+        &__logo{
+            height: auto;
+            width: 18vh;
+            align-self: center;
+        }
+    }
+}
