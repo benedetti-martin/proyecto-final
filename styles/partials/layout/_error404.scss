@@ -1,0 +1,32 @@
+/*error 404*/
+$fondo404: #22333b;
+
+.contenedor{
+    background-color: $fondo404;
+    height: 100vh;
+    &__logo{
+        display: flex;
+        justify-content: center;
+        padding-top: 10vh;
+            &__img{
+                height: 10em;
+                width: auto;
+            }
+    }
+    &__error404{
+        display: flex;
+        justify-content: center;
+        font-weight: bold;
+        font-size: 3rem;
+        color: #cfb9a0;
+        padding-top: 20vh;
+        text-align: center;
+    }
+    &__link404{
+        font-size: 2em;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+}
+
