@@ -120,6 +120,10 @@ $color-label: #a5a58d;
 
 /*pagina de compras*/
 
+.productos{
+    @extend .contactos
+}
+
 .botones-contenedor{
     display: flex;
     justify-content: center;
