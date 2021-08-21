@@ -119,7 +119,7 @@ $color-label: #a5a58d;
 /*pagina de compras*/
 
 .productos{
-    @extend .contactos
+    @extend .contactos;
 }
 
 .botones-contenedor{
