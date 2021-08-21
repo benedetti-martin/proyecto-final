@@ -18,7 +18,7 @@ $color-label: #a5a58d;
         &__estilo-h1 {
             @extend .estilo-h1;
             border-bottom: solid 5px #eae0d5;
-            margin-bottom: 3rem !important;
+            margin-bottom: 3rem;
             text-align: right;
             text-transform: uppercase;
         }
@@ -89,8 +89,8 @@ $color-label: #a5a58d;
 
 .artistas__hr{
     @include _hr;
-    color: #eae0d5 !important;
-    height: 4px !important;
+    color: #eae0d5;
+    height: 4px;
 }
 
 /*--pagina de contactos--*/
@@ -99,13 +99,13 @@ $color-label: #a5a58d;
     background-color: $cont-color;
     &__strong{
         @include strong;
-        font-size: 1.5em !important;
+        font-size: 1.5em;
         margin-left: 0;
     }
     &__div__p{
         @include p;
         color: $color-p-columna;
-        text-decoration: none !important;
+        text-decoration: none;
     }
     &__contenedor--izq{
         border: 1px solid $color-p-columna;

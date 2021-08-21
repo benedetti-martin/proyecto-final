@@ -11969,7 +11969,7 @@ label {
 
 /*estilos de la nav*/
 .barra-nav {
-  background-color: #5e503f !important;
+  background-color: #5e503f;
 }
 
 .barra-nav__container__logo {
@@ -11996,7 +11996,7 @@ label {
 
 .hero__estilo-h1 {
   border-bottom: solid 5px #eae0d5;
-  margin-bottom: 3rem !important;
+  margin-bottom: 3rem;
   text-align: right;
   text-transform: uppercase;
 }
@@ -12084,8 +12084,8 @@ label {
   opacity: 1;
   color: #22333b;
   height: 10px !important;
-  color: #eae0d5 !important;
-  height: 4px !important;
+  color: #eae0d5;
+  height: 4px;
 }
 
 /*--pagina de contactos--*/
@@ -12099,7 +12099,7 @@ label {
   font-weight: bold;
   margin-left: 15vh;
   text-transform: uppercase;
-  font-size: 1.5em !important;
+  font-size: 1.5em;
   margin-left: 0;
 }
 
@@ -12108,7 +12108,7 @@ label {
   margin-bottom: 3vh;
   font-size: 2.5vh;
   color: #ffe8d6;
-  text-decoration: none !important;
+  text-decoration: none;
 }
 
 .contactos__contenedor--izq {
