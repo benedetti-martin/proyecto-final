@@ -202,6 +202,44 @@ label {
   border: 1px solid #ffe8d6;
 }
 
+/*pagina de compras*/
+.botones-contenedor {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  background-color: #f1ebe4;
+}
+
+.botones-contenedor__label {
+  color: #000 !important;
+  font-weight: bold;
+}
+
+.botones-contenedor__boton {
+  height: 40px;
+  width: 95px;
+  padding: 1 1;
+  margin-top: 0.5rem;
+  border-radius: 8%;
+  opacity: 100%;
+  color: #000;
+  font-weight: bold;
+  text-transform: uppercase;
+  background-color: #a5a58d;
+  margin-bottom: 1rem;
+}
+
+.botones-contenedor__boton:hover {
+  background-color: #6491a6;
+  color: #fff;
+  text-decoration: underline;
+}
+
 /*estilos del footer*/
 .footer {
   background-color: #ac875d;

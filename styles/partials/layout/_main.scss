@@ -118,3 +118,33 @@ $color-label: #a5a58d;
 
 }
 
+/*pagina de compras*/
+
+.botones-contenedor{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    background-color: #f1ebe4;
+    &__label{
+        color: #000 !important;
+        font-weight: bold;
+    }
+    &__boton{
+        height: 40px;
+        width: 95px;
+        padding: 1 1;
+        margin-top: 0.5rem;
+        border-radius: 8%;
+        opacity: 100%;
+        color: #000;
+        font-weight: bold;
+        text-transform: uppercase;
+        background-color: $color-label;
+        margin-bottom: 1rem;
+    }
+    &__boton:hover{
+        background-color: #6491a6;
+        color: #fff;
+        text-decoration: underline;
+    }
+}
