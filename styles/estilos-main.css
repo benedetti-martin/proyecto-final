@@ -11942,7 +11942,7 @@ label {
 .hrS {
   opacity: 1;
   color: #22333b;
-  height: 10px !important;
+  height: 10px;
 }
 
 /*bucle each con mapa para los H*/
@@ -12083,7 +12083,7 @@ label {
 .artistas__hr {
   opacity: 1;
   color: #22333b;
-  height: 10px !important;
+  height: 10px;
   color: #eae0d5;
   height: 4px;
 }
