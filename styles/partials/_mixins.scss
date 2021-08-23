@@ -28,6 +28,12 @@ $hr-color: #22333b;
     font-size: $font-size ;
 }
 
+%align-center{
+    display: flex;
+    justify-items: center;
+    align-items: center;
+}
+
 /*bucle each con mapa para los H*/
 
 $tipoH: (
@@ -42,7 +48,6 @@ $tipoH: (
 @each $h, $color in $tipoH {
     .estilo-#{$h}{
         color: $color;
-    }
-    
+    }   
 }
 

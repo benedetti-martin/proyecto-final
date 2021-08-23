@@ -120,6 +120,16 @@ $color-label: #a5a58d;
 
 .productos{
     @extend .contactos;
+    height: auto;
+    &__pArt{
+        @include p;
+        color: #6491a6;
+    }
+    &__pTarifa{
+        @include p;
+        color: #000;
+        font-weight: bold;
+    }
 }
 
 .botones-contenedor{
@@ -147,6 +157,5 @@ $color-label: #a5a58d;
     &__boton:hover{
         background-color: #6491a6;
         color: #fff;
-        text-decoration: underline;
     }
 }
