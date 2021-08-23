@@ -22,7 +22,7 @@ $hr-color: #22333b;
 }
 
 
-@mixin p() {
+%p {
     margin-top: 3vh;
     margin-bottom: 3vh;
     font-size: $font-size ;
