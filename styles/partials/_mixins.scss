@@ -22,10 +22,16 @@ $hr-color: #22333b;
 }
 
 
-@mixin p() {
+%p {
     margin-top: 3vh;
     margin-bottom: 3vh;
     font-size: $font-size ;
+}
+
+%align-center{
+    display: flex;
+    justify-items: center;
+    align-items: center;
 }
 
 /*bucle each con mapa para los H*/
@@ -42,7 +48,6 @@ $tipoH: (
 @each $h, $color in $tipoH {
     .estilo-#{$h}{
         color: $color;
-    }
-    
+    }   
 }
 

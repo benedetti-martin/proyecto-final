@@ -22,15 +22,19 @@ $color-label: #a5a58d;
             text-align: right;
             text-transform: uppercase;
         }
-        &__estilo-h2 {
-            @extend .estilo-h2;
+        &__estiloP1 {
+            @extend %p;
+            color: $color-p;
             background-color: #4364753a;
-            
+            font-size: 1.8em; 
         }
-        &__estilo-h4{
-            @extend .estilo-h4;
+        &__estiloP2{
+            @extend %p;
+            color: $color-p;
             background: linear-gradient(to left,#0a090885, #c6ac8f79 );
             font-style: italic;
+            font-weight: bold;
+            font-size: 1.5em;
         }
 
 }
@@ -64,7 +68,7 @@ $color-label: #a5a58d;
     @include strong
     }
     &__p{
-        @include p;
+        @extend %p;
         color: $color-p;
     }
     &__columna{
@@ -74,7 +78,7 @@ $color-label: #a5a58d;
             text-transform: uppercase;
         }
         &__p{
-            @include p;
+            @extend %p;
             color: $color-p-columna;
             text-align: justify;
         }
@@ -103,7 +107,7 @@ $color-label: #a5a58d;
         margin-left: 0;
     }
     &__div__p{
-        @include p;
+        @extend %p;
         color: $color-p-columna;
         text-decoration: none;
     }
@@ -119,7 +123,19 @@ $color-label: #a5a58d;
 /*pagina de compras*/
 
 .productos{
-    @extend .contactos
+    @extend .contactos;
+    height: auto;
+    &__pArt{
+        @extend %p;
+        color: #6491a6;
+        font-weight: bold;
+        font-size: 1.3rem;
+    }
+    &__pTarifa{
+        @extend %p;
+        color: #000;
+        font-weight: bold;
+    }
 }
 
 .botones-contenedor{
@@ -147,6 +163,5 @@ $color-label: #a5a58d;
     &__boton:hover{
         background-color: #6491a6;
         color: #fff;
-        text-decoration: underline;
     }
 }
