@@ -3140,7 +3140,6 @@ textarea.form-control-lg {
   line-height: 1.5;
   color: #212529;
   text-align: center;
-  text-decoration: none;
   vertical-align: middle;
   cursor: pointer;
   -webkit-user-select: none;
@@ -4094,7 +4093,6 @@ fieldset:disabled .btn {
   font-weight: 400;
   color: #212529;
   text-align: inherit;
-  text-decoration: none;
   white-space: nowrap;
   background-color: transparent;
   border: 0;
@@ -4311,8 +4309,7 @@ fieldset:disabled .btn {
 .nav-link {
   display: block;
   padding: 0.5rem 1rem;
-  color: #0d6efd;
-  text-decoration: none;
+  color: #fff;
   -webkit-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
 }
@@ -4325,7 +4322,7 @@ fieldset:disabled .btn {
 }
 
 .nav-link:hover, .nav-link:focus {
-  color: #0a58ca;
+  color: #cccccc;
 }
 
 .nav-link.disabled {
@@ -4450,7 +4447,6 @@ fieldset:disabled .btn {
   padding-bottom: 0.3125rem;
   margin-right: 1rem;
   font-size: 1.25rem;
-  text-decoration: none;
   white-space: nowrap;
 }
 
@@ -5418,8 +5414,7 @@ fieldset:disabled .btn {
 .page-link {
   position: relative;
   display: block;
-  color: #0d6efd;
-  text-decoration: none;
+  color: #fff;
   background-color: #fff;
   border: 1px solid #dee2e6;
   -webkit-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
@@ -5437,14 +5432,14 @@ fieldset:disabled .btn {
 
 .page-link:hover {
   z-index: 2;
-  color: #0a58ca;
+  color: #cccccc;
   background-color: #e9ecef;
   border-color: #dee2e6;
 }
 
 .page-link:focus {
   z-index: 3;
-  color: #0a58ca;
+  color: #cccccc;
   background-color: #e9ecef;
   outline: 0;
   -webkit-box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
@@ -5756,7 +5751,6 @@ fieldset:disabled .btn {
   display: block;
   padding: 0.5rem 1rem;
   color: #212529;
-  text-decoration: none;
   background-color: #fff;
   border: 1px solid rgba(0, 0, 0, 0.125);
 }
@@ -11938,11 +11932,22 @@ label {
   color: white;
 }
 
+a:link {
+  text-decoration: none;
+  color: inherit;
+}
+
 /*algunos mixins para todo el documento*/
 .hrS {
   opacity: 1;
   color: #22333b;
   height: 10px;
+}
+
+.hero__estiloP1, .hero__estiloP2, .artistas__p, .artistas__columna__p, .contactos__div__p, .productos__pArt, .productos__pTarifa {
+  margin-top: 3vh;
+  margin-bottom: 3vh;
+  font-size: 2.5vh;
 }
 
 /*bucle each con mapa para los H*/
@@ -11951,11 +11956,11 @@ label {
   color: #cb997e;
 }
 
-.estilo-h2, .hero__estilo-h2 {
+.estilo-h2 {
   color: #f1ebe4;
 }
 
-.estilo-h4, .hero__estilo-h4 {
+.estilo-h4 {
   color: #ffffff;
 }
 
@@ -12001,14 +12006,18 @@ label {
   text-transform: uppercase;
 }
 
-.hero__estilo-h2 {
+.hero__estiloP1 {
+  color: #f1faee;
   background-color: #4364753a;
+  font-size: 1.8em;
 }
 
-.hero__estilo-h4 {
+.hero__estiloP2 {
+  color: #f1faee;
   background: -webkit-gradient(linear, right top, left top, from(#0a090885), to(#c6ac8f79));
   background: linear-gradient(to left, #0a090885, #c6ac8f79);
   font-style: italic;
+  font-weight: bold;
 }
 
 /*fondo del video*/
@@ -12052,9 +12061,6 @@ label {
 }
 
 .artistas__p {
-  margin-top: 3vh;
-  margin-bottom: 3vh;
-  font-size: 2.5vh;
   color: #f1faee;
 }
 
@@ -12064,9 +12070,6 @@ label {
 }
 
 .artistas__columna__p {
-  margin-top: 3vh;
-  margin-bottom: 3vh;
-  font-size: 2.5vh;
   color: #ffe8d6;
   text-align: justify;
 }
@@ -12104,9 +12107,6 @@ label {
 }
 
 .contactos__div__p {
-  margin-top: 3vh;
-  margin-bottom: 3vh;
-  font-size: 2.5vh;
   color: #ffe8d6;
   text-decoration: none;
 }
@@ -12125,16 +12125,10 @@ label {
 }
 
 .productos__pArt {
-  margin-top: 3vh;
-  margin-bottom: 3vh;
-  font-size: 2.5vh;
   color: #6491a6;
 }
 
 .productos__pTarifa {
-  margin-top: 3vh;
-  margin-bottom: 3vh;
-  font-size: 2.5vh;
   color: #000;
   font-weight: bold;
 }
