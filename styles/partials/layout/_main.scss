@@ -34,6 +34,7 @@ $color-label: #a5a58d;
             background: linear-gradient(to left,#0a090885, #c6ac8f79 );
             font-style: italic;
             font-weight: bold;
+            font-size: 1.5em;
         }
 
 }
@@ -127,6 +128,8 @@ $color-label: #a5a58d;
     &__pArt{
         @extend %p;
         color: #6491a6;
+        font-weight: bold;
+        font-size: 1.3rem;
     }
     &__pTarifa{
         @extend %p;

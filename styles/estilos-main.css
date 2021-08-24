@@ -12018,6 +12018,7 @@ a:link {
   background: linear-gradient(to left, #0a090885, #c6ac8f79);
   font-style: italic;
   font-weight: bold;
+  font-size: 1.5em;
 }
 
 /*fondo del video*/
@@ -12126,6 +12127,8 @@ a:link {
 
 .productos__pArt {
   color: #6491a6;
+  font-weight: bold;
+  font-size: 1.3rem;
 }
 
 .productos__pTarifa {
