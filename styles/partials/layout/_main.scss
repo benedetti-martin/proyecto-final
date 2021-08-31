@@ -1,7 +1,7 @@
 /*estilo del hero del inicio*/
-$cont-color: #22333b;
+$cont-color: #E0E0E0;
 $strong-color: #cfb9a0;
-$color-p: #f1faee;
+$color-p: #E0E0E0;
 $color-p-columna: #ffe8d6;
 $color-label: #a5a58d;
 
@@ -62,9 +62,11 @@ $color-label: #a5a58d;
 
 /*--pagina de artistas--*/ 
 .artistas{
-    background-color: $cont-color;
-
-     &__strong-style{
+    background-image: url(../media/fondo-galeria.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    &__strong-style{
     @include strong
     }
     &__p{
@@ -113,9 +115,11 @@ $color-label: #a5a58d;
     }
     &__contenedor--izq{
         border: 1px solid $color-p-columna;
+        background-color: #161A1D;
     }
     &__contenedor--der{
        border: 1px solid $color-p-columna;
+       background-color: #161A1D;
     }
 
 }
