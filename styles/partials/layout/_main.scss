@@ -1,7 +1,7 @@
 /*estilo del hero del inicio*/
 $cont-color: #E0E0E0;
-$strong-color: #cfb9a0;
-$color-p: #E0E0E0;
+$strong-color: #EBEBEB;
+$color-p: #978887;
 $color-p-columna: #ffe8d6;
 $color-label: #a5a58d;
 
@@ -66,8 +66,11 @@ $color-label: #a5a58d;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    &__strong-style{
-    @include strong
+    &__estilo-h1{
+    @extend .estilo-h1;
+        font-weight: bold;
+        text-transform: uppercase;
+        margin-left: 15vh;
     }
     &__p{
         @extend %p;

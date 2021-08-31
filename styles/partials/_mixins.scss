@@ -18,9 +18,7 @@ $hr-color: #22333b;
     color: $strong-color;
     font-weight: bold;
     margin-left: 15vh;
-    text-transform: uppercase;
 }
-
 
 %p {
     margin-top: 3vh;
@@ -37,7 +35,7 @@ $hr-color: #22333b;
 /*bucle each con mapa para los H*/
 
 $tipoH: (
-    h1: #cb997e,
+    h1: #AC0C0F,
     h2: #f1ebe4,
     h4: #ffffff,
     h3: #eae0d5,
@@ -50,4 +48,8 @@ $tipoH: (
         color: $color;
     }   
 }
+
+
+
+
 
