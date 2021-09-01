@@ -1,5 +1,5 @@
 /*estilos del footer*/
-$fondo-footer: #ac875d;
+$fondo-footer: #161a1d;
 
 .footer{
     background-color: $fondo-footer;
@@ -10,5 +10,8 @@ $fondo-footer: #ac875d;
             margin-top: 5rem;
             padding: 1rem;
         }
+    }
+    &__p{
+        color: #D6D6D6;
     }
 }

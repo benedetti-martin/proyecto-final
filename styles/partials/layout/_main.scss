@@ -1,8 +1,8 @@
 /*estilo del hero del inicio*/
-$cont-color: #22333b;
-$strong-color: #cfb9a0;
-$color-p: #f1faee;
-$color-p-columna: #ffe8d6;
+$cont-color: #E0E0E0;
+$strong-color: #EBEBEB;
+$color-p: #ECE9E9;
+$color-p-columna: #ECE9E9;
 $color-label: #a5a58d;
 
 /*--index--*/ 
@@ -46,9 +46,13 @@ $color-label: #a5a58d;
 
 /*--galeria*/ 
 .galeria{
-    background-color:$cont-color;
-    &__strong{
-        @include strong;
+    background-image: url(../media/fondo-galeria.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    &__estilo-h1{
+        @extend .estilo-h1;
+            font-weight: bold;
     }
     &__h5{
         @extend .estilo-h5;
@@ -62,24 +66,35 @@ $color-label: #a5a58d;
 
 /*--pagina de artistas--*/ 
 .artistas{
-    background-color: $cont-color;
-
-     &__strong-style{
-    @include strong
+    background-image: url(../media/fondo-artistas.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    &__estilo-h1{
+    @extend .estilo-h1;
+        font-weight: bold;
     }
     &__p{
         @extend %p;
         color: $color-p;
+        font-weight: bold;
+        font-size: 1.5rem;
+        background: linear-gradient(to right, rgba(255, 255, 255, 0.185), rgba(0, 0, 0, 0.39));
+        padding-left: 2rem;
+        padding-right: 2rem;
     }
     &__columna{
         &__h3{
             @extend .estilo-h3;
             text-align: left;
             text-transform: uppercase;
+            font-weight: bold;
         }
         &__p{
             @extend %p;
             color: $color-p-columna;
+            font-weight: bold;
+            font-size: 1.5rem;
             text-align: justify;
         }
     &__img{
@@ -93,7 +108,7 @@ $color-label: #a5a58d;
 
 .artistas__hr{
     @include _hr;
-    color: #eae0d5;
+    color: #999999;
     height: 4px;
 }
 
@@ -113,9 +128,11 @@ $color-label: #a5a58d;
     }
     &__contenedor--izq{
         border: 1px solid $color-p-columna;
+        background-color: #161A1D;
     }
     &__contenedor--der{
        border: 1px solid $color-p-columna;
+       background-color: #161A1D;
     }
 
 }
@@ -165,3 +182,22 @@ $color-label: #a5a58d;
         color: #fff;
     }
 }
+
+@media screen and (max-width: 320px) {
+    .artistas {
+        background-color: #D3D3D3;
+        background-image: none;
+    }
+    .artistas__p{
+        margin-top: 3vh;
+        margin-bottom: 3vh;
+        color: #0B090A;
+        font-weight: bold;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        background:none;
+    }
+    .artistas__columna__p{
+        color: #000;
+    }
+  }
