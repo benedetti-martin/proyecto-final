@@ -11922,14 +11922,9 @@ body {
           box-sizing: border-box;
 }
 
-/*fuente from google fonts
-*{
-    font-family: 'Nunito Sans', sans-serif;
-}*/
+/*fuente from google fonts*/
 * {
-  font-family: 'Catamaran', sans-serif;
-  font-family: 'Passion One', cursive;
-  font-family: 'Work Sans', sans-serif;
+  font-family: 'Nunito Sans', sans-serif;
 }
 
 label {
@@ -11957,12 +11952,12 @@ a:link {
 
 /*bucle each con mapa para los H*/
 /*--resultados each--*/
-.estilo-h1, .hero__estilo-h1, .galeria__estilo-h1, .artistas__estilo-h1 {
+.estilo-h1, .hero__estilo-h1, .galeria__estilo-h1, .artistas__estilo-h1, .contactos__estilo-h1, .productos__estilo-h1 {
   color: #E5383B;
 }
 
-.estilo-h2 {
-  color: #f1ebe4;
+.estilo-h2, .productos__estilo-h2 {
+  color: #121517;
 }
 
 .estilo-h4 {
@@ -12109,13 +12104,8 @@ a:link {
   background-color: #E0E0E0;
 }
 
-.contactos__strong {
-  font-size: 4vh;
-  color: #EBEBEB;
+.contactos__estilo-h1 {
   font-weight: bold;
-  margin-left: 15vh;
-  font-size: 1.5em;
-  margin-left: 0;
 }
 
 .contactos__div__p {
@@ -12133,19 +12123,38 @@ a:link {
   background-color: #161A1D;
 }
 
+.contactos__strong {
+  text-transform: uppercase;
+  color: #EBEBEB;
+}
+
 /*pagina de compras*/
 .productos {
+  background: -webkit-gradient(linear, left top, left bottom, from(#161a1daf), to(#F5F3F4));
+  background: linear-gradient(to bottom, #161a1daf, #F5F3F4);
   height: auto;
 }
 
+.productos__div-contenedor {
+  border: 1px solid black;
+}
+
+.productos__estilo-h1 {
+  font-weight: bold;
+}
+
+.productos__estilo-h2 {
+  font-weight: bolder;
+}
+
 .productos__pArt {
-  color: #6491a6;
+  color: #86090B;
   font-weight: bold;
   font-size: 1.3rem;
 }
 
 .productos__pTarifa {
-  color: #000;
+  color: #F5F3F4;
   font-weight: bold;
 }
 
@@ -12158,7 +12167,7 @@ a:link {
           justify-content: center;
   -ms-flex-line-pack: center;
       align-content: center;
-  background-color: #f1ebe4;
+  background-color: #474747;
 }
 
 .botones-contenedor__label {
@@ -12176,12 +12185,12 @@ a:link {
   color: #000;
   font-weight: bold;
   text-transform: uppercase;
-  background-color: #a5a58d;
+  background-color: #A4161A;
   margin-bottom: 1rem;
 }
 
 .botones-contenedor__boton:hover {
-  background-color: #6491a6;
+  background-color: #E5383B;
   color: #fff;
 }
 
