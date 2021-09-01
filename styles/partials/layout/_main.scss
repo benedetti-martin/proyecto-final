@@ -46,7 +46,10 @@ $color-label: #a5a58d;
 
 /*--galeria*/ 
 .galeria{
-    background-color:$cont-color;
+    background-image: url(../media/fondo-galeria.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
     &__strong{
         @include strong;
     }
@@ -62,7 +65,7 @@ $color-label: #a5a58d;
 
 /*--pagina de artistas--*/ 
 .artistas{
-    background-image: url(../media/fondo-galeria.jpg);
+    background-image: url(../media/fondo-artistas.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -103,7 +106,7 @@ $color-label: #a5a58d;
 
 .artistas__hr{
     @include _hr;
-    color: #eae0d5;
+    color: #999999;
     height: 4px;
 }
 

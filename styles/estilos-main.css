@@ -11942,12 +11942,6 @@ a:link {
   color: inherit;
 }
 
-@media screen and (max-width: 320px) {
-  .artistas {
-    background-color: #D3D3D3;
-  }
-}
-
 /*algunos mixins para todo el documento*/
 .hrS {
   opacity: 1;
@@ -12040,7 +12034,10 @@ a:link {
 
 /*--galeria*/
 .galeria {
-  background-color: #E0E0E0;
+  background-image: url(../media/fondo-galeria.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .galeria__strong {
@@ -12060,7 +12057,7 @@ a:link {
 
 /*--pagina de artistas--*/
 .artistas {
-  background-image: url(../media/fondo-galeria.jpg);
+  background-image: url(../media/fondo-artistas.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -12105,7 +12102,7 @@ a:link {
   opacity: 1;
   color: #000;
   height: 10px;
-  color: #eae0d5;
+  color: #999999;
   height: 4px;
 }
 
@@ -12218,6 +12215,10 @@ a:link {
   display: inline-block;
   margin-top: 5rem;
   padding: 1rem;
+}
+
+.footer__p {
+  color: #D6D6D6;
 }
 
 /*error 404*/
