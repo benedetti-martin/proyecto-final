@@ -108,6 +108,17 @@ $color-boton-hover: #E5383B;
         display: flex;
         justify-items: center;
         }
+    
+    }
+    &__img-ej{
+        height: 12rem;
+        width: 12rem;
+        opacity: 75%;
+    }
+    &__img-ej:hover{
+        opacity: 100%;
+        transform: scale(1.2,1.2);
+        transition: all 900mm ease;
     }
 }
 
@@ -205,13 +216,13 @@ $color-boton-hover: #E5383B;
 
 @media only screen and (max-width: 426px) {
     .artistas {
-        background-color: #D3D3D3;
+        background:linear-gradient(to bottom, black, white) !important;
         background-image: none;
     }
     .artistas__p{
         margin-top: 3vh;
         margin-bottom: 3vh;
-        color: #0B090A;
+        color: #fff;
         font-weight: bold;
         padding-left: 2rem;
         padding-right: 2rem;
@@ -219,5 +230,8 @@ $color-boton-hover: #E5383B;
     }
     .artistas__columna__p{
         color: #000;
+    }
+    .artistas__img-ej{
+        display: none;
     }
   }
