@@ -11957,7 +11957,7 @@ a:link {
 
 /*bucle each con mapa para los H*/
 /*--resultados each--*/
-.estilo-h1, .hero__estilo-h1, .artistas__estilo-h1 {
+.estilo-h1, .hero__estilo-h1, .galeria__estilo-h1, .artistas__estilo-h1 {
   color: #E5383B;
 }
 
@@ -11970,7 +11970,7 @@ a:link {
 }
 
 .estilo-h3, .artistas__columna__h3 {
-  color: #eae0d5;
+  color: #FFFFFF;
 }
 
 .estilo-h5, .galeria__h5 {
@@ -12040,11 +12040,8 @@ a:link {
   background-repeat: no-repeat;
 }
 
-.galeria__strong {
-  font-size: 4vh;
-  color: #EBEBEB;
+.galeria__estilo-h1 {
   font-weight: bold;
-  margin-left: 15vh;
 }
 
 .galeria__h5 {
@@ -12071,8 +12068,8 @@ a:link {
   color: #ECE9E9;
   font-weight: bold;
   font-size: 1.5rem;
-  background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0.322)), to(rgba(0, 0, 0, 0.39)));
-  background: linear-gradient(to right, rgba(255, 255, 255, 0.322), rgba(0, 0, 0, 0.39));
+  background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0.185)), to(rgba(0, 0, 0, 0.39)));
+  background: linear-gradient(to right, rgba(255, 255, 255, 0.185), rgba(0, 0, 0, 0.39));
   padding-left: 2rem;
   padding-right: 2rem;
 }
@@ -12080,6 +12077,7 @@ a:link {
 .artistas__columna__h3 {
   text-align: left;
   text-transform: uppercase;
+  font-weight: bold;
 }
 
 .artistas__columna__p {
@@ -12199,6 +12197,10 @@ a:link {
     font-weight: bold;
     padding-left: 2rem;
     padding-right: 2rem;
+    background: none;
+  }
+  .artistas__columna__p {
+    color: #000;
   }
 }
 

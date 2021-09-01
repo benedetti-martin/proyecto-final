@@ -50,8 +50,9 @@ $color-label: #a5a58d;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    &__strong{
-        @include strong;
+    &__estilo-h1{
+        @extend .estilo-h1;
+            font-weight: bold;
     }
     &__h5{
         @extend .estilo-h5;
@@ -78,7 +79,7 @@ $color-label: #a5a58d;
         color: $color-p;
         font-weight: bold;
         font-size: 1.5rem;
-        background: linear-gradient(to right, rgba(255, 255, 255, 0.322), rgba(0, 0, 0, 0.39));
+        background: linear-gradient(to right, rgba(255, 255, 255, 0.185), rgba(0, 0, 0, 0.39));
         padding-left: 2rem;
         padding-right: 2rem;
     }
@@ -87,6 +88,7 @@ $color-label: #a5a58d;
             @extend .estilo-h3;
             text-align: left;
             text-transform: uppercase;
+            font-weight: bold;
         }
         &__p{
             @extend %p;
@@ -193,5 +195,9 @@ $color-label: #a5a58d;
         font-weight: bold;
         padding-left: 2rem;
         padding-right: 2rem;
+        background:none;
+    }
+    .artistas__columna__p{
+        color: #000;
     }
   }
