@@ -48,7 +48,7 @@ $color-boton-hover: #E5383B;
 
 /*--galeria*/ 
 .galeria{
-    background-image: url(../media/fondo-galeria.jpg);
+    background-image: url(../media/fondo-galeria-1.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -56,13 +56,14 @@ $color-boton-hover: #E5383B;
         @extend .estilo-h1;
             font-weight: bold;
     }
-    &__h5{
-        @extend .estilo-h5;
+    &__h3{
+        @extend .estilo-h3;
         font-size: 1.5rem;
         font-weight: bold;
         text-align: center;
         margin-bottom: 1vh;
         margin-top: 10vh;
+        background-color: #D9D4D3;
     }
 }
 
@@ -91,6 +92,8 @@ $color-boton-hover: #E5383B;
             text-align: left;
             text-transform: uppercase;
             font-weight: bold;
+            background-color: #d9d4d39d;
+            padding-left: 1.2rem;
         }
         &__p{
             @extend %p;
