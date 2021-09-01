@@ -1,8 +1,8 @@
 /*estilo del hero del inicio*/
 $cont-color: #E0E0E0;
 $strong-color: #EBEBEB;
-$color-p: #978887;
-$color-p-columna: #ffe8d6;
+$color-p: #ECE9E9;
+$color-p-columna: #ECE9E9;
 $color-label: #a5a58d;
 
 /*--index--*/ 
@@ -69,12 +69,15 @@ $color-label: #a5a58d;
     &__estilo-h1{
     @extend .estilo-h1;
         font-weight: bold;
-        text-transform: uppercase;
-        margin-left: 15vh;
     }
     &__p{
         @extend %p;
         color: $color-p;
+        font-weight: bold;
+        font-size: 1.5rem;
+        background: linear-gradient(to right, rgba(255, 255, 255, 0.322), rgba(0, 0, 0, 0.39));
+        padding-left: 2rem;
+        padding-right: 2rem;
     }
     &__columna{
         &__h3{
@@ -85,6 +88,8 @@ $color-label: #a5a58d;
         &__p{
             @extend %p;
             color: $color-p-columna;
+            font-weight: bold;
+            font-size: 1.5rem;
             text-align: justify;
         }
     &__img{
@@ -172,3 +177,18 @@ $color-label: #a5a58d;
         color: #fff;
     }
 }
+
+@media screen and (max-width: 320px) {
+    .artistas {
+        background-color: #D3D3D3;
+        background-image: none;
+    }
+    .artistas__p{
+        margin-top: 3vh;
+        margin-bottom: 3vh;
+        color: #0B090A;
+        font-weight: bold;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+  }

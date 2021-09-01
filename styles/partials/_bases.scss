@@ -9,9 +9,15 @@ body {
     padding: 0;
     box-sizing: border-box;
 }
-/*fuente from google fonts*/
+/*fuente from google fonts
 *{
     font-family: 'Nunito Sans', sans-serif;
+}*/
+
+* {
+  font-family: 'Catamaran', sans-serif;
+  font-family: 'Passion One', cursive;
+  font-family: 'Work Sans', sans-serif;
 }
 
 label{
@@ -29,4 +35,8 @@ a:link{
   color: inherit;
 }
 
-
+@media screen and (max-width: 320px) {
+  .artistas {
+    background-color: #D3D3D3;
+  }
+}

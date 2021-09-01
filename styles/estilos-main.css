@@ -11922,9 +11922,14 @@ body {
           box-sizing: border-box;
 }
 
-/*fuente from google fonts*/
+/*fuente from google fonts
+*{
+    font-family: 'Nunito Sans', sans-serif;
+}*/
 * {
-  font-family: 'Nunito Sans', sans-serif;
+  font-family: 'Catamaran', sans-serif;
+  font-family: 'Passion One', cursive;
+  font-family: 'Work Sans', sans-serif;
 }
 
 label {
@@ -11937,10 +11942,16 @@ a:link {
   color: inherit;
 }
 
+@media screen and (max-width: 320px) {
+  .artistas {
+    background-color: #D3D3D3;
+  }
+}
+
 /*algunos mixins para todo el documento*/
 .hrS {
   opacity: 1;
-  color: #22333b;
+  color: #000;
   height: 10px;
 }
 
@@ -11953,7 +11964,7 @@ a:link {
 /*bucle each con mapa para los H*/
 /*--resultados each--*/
 .estilo-h1, .hero__estilo-h1, .artistas__estilo-h1 {
-  color: #AC0C0F;
+  color: #E5383B;
 }
 
 .estilo-h2 {
@@ -12007,13 +12018,13 @@ a:link {
 }
 
 .hero__estiloP1 {
-  color: #978887;
+  color: #ECE9E9;
   background-color: #4364753a;
   font-size: 1.8em;
 }
 
 .hero__estiloP2 {
-  color: #978887;
+  color: #ECE9E9;
   background: -webkit-gradient(linear, right top, left top, from(#0a090885), to(#c6ac8f79));
   background: linear-gradient(to left, #0a090885, #c6ac8f79);
   font-style: italic;
@@ -12057,12 +12068,16 @@ a:link {
 
 .artistas__estilo-h1 {
   font-weight: bold;
-  text-transform: uppercase;
-  margin-left: 15vh;
 }
 
 .artistas__p {
-  color: #978887;
+  color: #ECE9E9;
+  font-weight: bold;
+  font-size: 1.5rem;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0.322)), to(rgba(0, 0, 0, 0.39)));
+  background: linear-gradient(to right, rgba(255, 255, 255, 0.322), rgba(0, 0, 0, 0.39));
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
 .artistas__columna__h3 {
@@ -12071,7 +12086,9 @@ a:link {
 }
 
 .artistas__columna__p {
-  color: #ffe8d6;
+  color: #ECE9E9;
+  font-weight: bold;
+  font-size: 1.5rem;
   text-align: justify;
 }
 
@@ -12086,7 +12103,7 @@ a:link {
 
 .artistas__hr {
   opacity: 1;
-  color: #22333b;
+  color: #000;
   height: 10px;
   color: #eae0d5;
   height: 4px;
@@ -12107,17 +12124,17 @@ a:link {
 }
 
 .contactos__div__p {
-  color: #ffe8d6;
+  color: #ECE9E9;
   text-decoration: none;
 }
 
 .contactos__contenedor--izq {
-  border: 1px solid #ffe8d6;
+  border: 1px solid #ECE9E9;
   background-color: #161A1D;
 }
 
 .contactos__contenedor--der {
-  border: 1px solid #ffe8d6;
+  border: 1px solid #ECE9E9;
   background-color: #161A1D;
 }
 
@@ -12171,6 +12188,21 @@ a:link {
 .botones-contenedor__boton:hover {
   background-color: #6491a6;
   color: #fff;
+}
+
+@media screen and (max-width: 320px) {
+  .artistas {
+    background-color: #D3D3D3;
+    background-image: none;
+  }
+  .artistas__p {
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+    color: #0B090A;
+    font-weight: bold;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
 }
 
 /*estilos del footer*/
