@@ -2,7 +2,7 @@
 $cont-color: #E0E0E0;
 $strong-color: #EBEBEB;
 $color-p: #ECE9E9;
-$color-p-columna: #ECE9E9;
+$color-p-columna: #000;
 $color-label: #a5a58d;
 $color-boton: #A4161A;
 $color-boton-hover: #E5383B;
@@ -19,6 +19,7 @@ $color-boton-hover: #E5383B;
     opacity: 90%;
         &__estilo-h1 {
             @extend .estilo-h1;
+            font-size: 2.4rem;
             border-bottom: solid 5px #eae0d5;
             margin-bottom: 3rem;
             text-align: right;
@@ -29,6 +30,7 @@ $color-boton-hover: #E5383B;
             color: $color-p;
             background-color: #4364753a;
             font-size: 1.8em; 
+
         }
         &__estiloP2{
             @extend %p;
@@ -77,14 +79,18 @@ $color-boton-hover: #E5383B;
     @extend .estilo-h1;
         font-weight: bold;
     }
+    &_contenedor{
+        background-color: #e0e0e096;
+    }
     &__p{
         @extend %p;
-        color: $color-p;
+        color: #000;
         font-weight: bold;
-        font-size: 1.5rem;
-        background: linear-gradient(to right, rgba(255, 255, 255, 0.185), rgba(0, 0, 0, 0.39));
+        font-size: 1.8rem;
         padding-left: 2rem;
         padding-right: 2rem;
+        text-align: center;
+        border-bottom: 3px solid black;
     }
     &__columna{
         &__h3{
@@ -92,15 +98,13 @@ $color-boton-hover: #E5383B;
             text-align: left;
             text-transform: uppercase;
             font-weight: bold;
-            background-color: #d9d4d39d;
             padding-left: 1.2rem;
         }
         &__p{
             @extend %p;
             color: $color-p-columna;
             font-weight: bold;
-            font-size: 1.5rem;
-            text-align: justify;
+            font-size: 1.8rem;
         }
     &__img{
         height: 40vh;
@@ -108,12 +112,11 @@ $color-boton-hover: #E5383B;
         display: flex;
         justify-items: center;
         }
-    
     }
     &__img-ej{
         height: 12rem;
         width: 12rem;
-        opacity: 75%;
+        opacity: 90%;
     }
     &__img-ej:hover{
         opacity: 100%;
@@ -124,29 +127,32 @@ $color-boton-hover: #E5383B;
 
 .artistas__hr{
     @include _hr;
-    color: #999999;
+    color: #000;
     height: 4px;
 }
 
 /*--pagina de contactos--*/
 
 .contactos{
-    background-color: $cont-color;
+    background-image: url(../media/fondo-contactos.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
     &__estilo-h1 {
         @extend .estilo-h1;
         font-weight: bold;
     }
     &__div__p{
         @extend %p;
-        color: $color-p-columna;
+        color: $color-p;
         text-decoration: none;
     }
     &__contenedor--izq{
-        border: 1px solid $color-p-columna;
+        border: 1px solid $color-p;
         background-color: #161A1D;
     }
     &__contenedor--der{
-       border: 1px solid $color-p-columna;
+       border: 1px solid $color-p;
        background-color: #161A1D;
     }
     &__strong{
@@ -160,10 +166,13 @@ $color-boton-hover: #E5383B;
 
 .productos{
     @extend .contactos;
-    background: linear-gradient(to bottom, #161a1daf, #F5F3F4);
-    height: auto;
+    background-image: url(../media/fondo-tienda.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
     &__div-contenedor{
         border: 1px solid black;
+        background-color: #f5f3f452;
     }
     &__estilo-h1 {
         @extend .estilo-h1;
@@ -175,9 +184,9 @@ $color-boton-hover: #E5383B;
     }
     &__pArt{
         @extend %p;
-        color: #86090B;
+        color: #0B090A;
         font-weight: bold;
-        font-size: 1.3rem;
+        font-size: 1.5rem;
     }
     &__pTarifa{
         @extend %p;
@@ -215,10 +224,6 @@ $color-boton-hover: #E5383B;
 }
 
 @media only screen and (max-width: 426px) {
-    .artistas {
-        background:linear-gradient(to bottom, black, white) !important;
-        background-image: none;
-    }
     .artistas__p{
         margin-top: 3vh;
         margin-bottom: 3vh;
@@ -234,4 +239,23 @@ $color-boton-hover: #E5383B;
     .artistas__img-ej{
         display: none;
     }
+
+  }
+
+  @media only screen and (max-width: 991px) {
+      .productos__pArt {
+          font-size: 0.9rem;
+          font-weight: normal;
+      }
+      .artistas__columna__p{
+          font-size: 1.2rem;
+      }
+      .artistas__img-ej{
+        height: 7em;
+        width: 7em;
+      }
+      .artistas__columna__img{
+        height: 10em;
+        width: 10em;
+      }
   }

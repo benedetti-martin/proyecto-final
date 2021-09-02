@@ -11953,7 +11953,7 @@ a:link {
 /*bucle each con mapa para los H*/
 /*--resultados each--*/
 .estilo-h1, .hero__estilo-h1, .galeria__estilo-h1, .artistas__estilo-h1, .contactos__estilo-h1, .productos__estilo-h1 {
-  color: #E5383B;
+  color: #FFFFFF;
 }
 
 .estilo-h2, .productos__estilo-h2 {
@@ -11965,7 +11965,7 @@ a:link {
 }
 
 .estilo-h3, .galeria__h3, .artistas__columna__h3 {
-  color: #474747;
+  color: #2b2a2a;
 }
 
 .estilo-h5 {
@@ -12000,6 +12000,7 @@ a:link {
 }
 
 .hero__estilo-h1 {
+  font-size: 2.4rem;
   border-bottom: solid 5px #eae0d5;
   margin-bottom: 3rem;
   text-align: right;
@@ -12060,29 +12061,31 @@ a:link {
   font-weight: bold;
 }
 
+.artistas_contenedor {
+  background-color: #e0e0e096;
+}
+
 .artistas__p {
-  color: #ECE9E9;
+  color: #000;
   font-weight: bold;
-  font-size: 1.5rem;
-  background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0.185)), to(rgba(0, 0, 0, 0.39)));
-  background: linear-gradient(to right, rgba(255, 255, 255, 0.185), rgba(0, 0, 0, 0.39));
+  font-size: 1.8rem;
   padding-left: 2rem;
   padding-right: 2rem;
+  text-align: center;
+  border-bottom: 3px solid black;
 }
 
 .artistas__columna__h3 {
   text-align: left;
   text-transform: uppercase;
   font-weight: bold;
-  background-color: #d9d4d39d;
   padding-left: 1.2rem;
 }
 
 .artistas__columna__p {
-  color: #ECE9E9;
+  color: #000;
   font-weight: bold;
-  font-size: 1.5rem;
-  text-align: justify;
+  font-size: 1.8rem;
 }
 
 .artistas__columna__img {
@@ -12097,7 +12100,7 @@ a:link {
 .artistas__img-ej {
   height: 12rem;
   width: 12rem;
-  opacity: 75%;
+  opacity: 90%;
 }
 
 .artistas__img-ej:hover {
@@ -12112,13 +12115,16 @@ a:link {
   opacity: 1;
   color: #000;
   height: 10px;
-  color: #999999;
+  color: #000;
   height: 4px;
 }
 
 /*--pagina de contactos--*/
 .contactos, .productos {
-  background-color: #E0E0E0;
+  background-image: url(../media/fondo-contactos.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .contactos__estilo-h1 {
@@ -12147,13 +12153,15 @@ a:link {
 
 /*pagina de compras*/
 .productos {
-  background: -webkit-gradient(linear, left top, left bottom, from(#161a1daf), to(#F5F3F4));
-  background: linear-gradient(to bottom, #161a1daf, #F5F3F4);
-  height: auto;
+  background-image: url(../media/fondo-tienda.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .productos__div-contenedor {
   border: 1px solid black;
+  background-color: #f5f3f452;
 }
 
 .productos__estilo-h1 {
@@ -12165,9 +12173,9 @@ a:link {
 }
 
 .productos__pArt {
-  color: #86090B;
+  color: #0B090A;
   font-weight: bold;
-  font-size: 1.3rem;
+  font-size: 1.5rem;
 }
 
 .productos__pTarifa {
@@ -12212,11 +12220,6 @@ a:link {
 }
 
 @media only screen and (max-width: 426px) {
-  .artistas {
-    background: -webkit-gradient(linear, left top, left bottom, from(black), to(white)) !important;
-    background: linear-gradient(to bottom, black, white) !important;
-    background-image: none;
-  }
   .artistas__p {
     margin-top: 3vh;
     margin-bottom: 3vh;
@@ -12231,6 +12234,24 @@ a:link {
   }
   .artistas__img-ej {
     display: none;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .productos__pArt {
+    font-size: 0.9rem;
+    font-weight: normal;
+  }
+  .artistas__columna__p {
+    font-size: 1.2rem;
+  }
+  .artistas__img-ej {
+    height: 7em;
+    width: 7em;
+  }
+  .artistas__columna__img {
+    height: 10em;
+    width: 10em;
   }
 }
 
