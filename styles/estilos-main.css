@@ -12255,6 +12255,13 @@ a:link {
   }
 }
 
+@media only screen and (max-width: 1400px) {
+  .productos__pArt {
+    font-size: 1.1rem;
+    font-weight: bold;
+  }
+}
+
 /*estilos del footer*/
 .footer {
   background-color: #161a1d;
